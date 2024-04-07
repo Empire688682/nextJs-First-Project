@@ -1,0 +1,10 @@
+.container{
+    width: 100%;
+    z-index: 99;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
