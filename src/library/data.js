@@ -1,23 +1,55 @@
-const users = [
-    {id:1, name:"Daniel"},
-    {id:2, name:"Juwon"},
+export const posts = [
+    {
+        id:1,
+        title:"Post 1",
+        body:"suscipit recusandae consequuntur expedita et cum"
+    },
+    {
+        id:2,
+        title:"Post 2",
+        body:"reprehenderit molestiae ut ut quas totam"
+    },
+    {
+        id:3,
+        title:"Post 3",
+        body:"nostrum rerum est autem sunt rem eveniet architecto"
+    },
+    {
+        id:4,
+        title:"Post 4",
+        body:"quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam"
+    },
 ];
 
-const posts = [
-    {id:1, title:"Post 1", body:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas accusantium suscipit fuga, optio sed doloribus quisquam officiis, architecto minima eaque dolor molestiae quaerat illo provident sunt ad harum rem. Est!", userId:1},
-    {id:2, title:"Post 2", body:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas accusantium suscipit fuga, optio sed doloribus quisquam officiis, architecto minima eaque dolor molestiae quaerat illo provident sunt ad harum rem. Est!", userId:2},
-    {id:3, title:"Post 3", body:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas accusantium suscipit fuga, optio sed doloribus quisquam officiis, architecto minima eaque dolor molestiae quaerat illo provident sunt ad harum rem. Est!", userId:3},
-    {id:4, title:"Post 4", body:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas accusantium suscipit fuga, optio sed doloribus quisquam officiis, architecto minima eaque dolor molestiae quaerat illo provident sunt ad harum rem. Est!", userId:4},
-]
-
-export const getPosts = () =>{
+export const getPosts = async () =>{
     return posts;
 }
 
+export const users = [
+    {
+        id:1,
+        name:"Daniel"
+    },
+    {
+        id:2,
+        name:"Juwon"
+    },
+    {
+        id:3,
+        name:"Rosie"
+    },
+    {
+        id:4,
+        name:"Empire"
+    }
+];
+
 export const getPost = async (id) =>{
-    const post = posts.find((post) => post.id === parseInt(id))
-    return post
+  const post = posts.find((post) => post.id === parseInt(id));
+  return post
 }
-export const getUser = async () =>{
-    return users.find((user) => user.id === parseInt(id))
+
+export const getUser = async (id) =>{
+    const user = users.find((user) => user.id === parseInt(id));
+    return user;
 }

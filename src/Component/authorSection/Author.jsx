@@ -1,17 +1,20 @@
 import React from 'react'
 import styles from './Author.module.css';
+import { getUser } from '@/library/data';
 
-const getUsers = async (userId) =>{
-  const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
-  if(!response.ok){
-    throw Error("An error Occured");
-  };
-  return response.json();
-}
+//Fetct user with Api
+//const getUsers = async (userId) =>{
+ // const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
+  //if(!response.ok){
+  //  throw Error("An error Occured");
+  //};
+  //return response.json();
+//}
 
-const Author = async ({post}) => {
-const {userId} = post;
-  const author = await getUsers(userId);
+const Author = async ({slug}) => {
+  const userId = slug
+  //Fetct user without Api
+  const author = await getUser(userId)
   return (
     <div className={styles.container}>
        <div className={styles.author}>
