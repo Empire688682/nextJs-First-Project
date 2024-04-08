@@ -2,22 +2,26 @@ export const posts = [
     {
         id:1,
         title:"Post 1",
-        body:"suscipit recusandae consequuntur expedita et cum"
+        body:"suscipit recusandae consequuntur expedita et cum",
+        name:"Daniel"
     },
     {
         id:2,
         title:"Post 2",
-        body:"reprehenderit molestiae ut ut quas totam"
+        body:"reprehenderit molestiae ut ut quas totam",
+        name:"Juwon"
     },
     {
         id:3,
         title:"Post 3",
-        body:"nostrum rerum est autem sunt rem eveniet architecto"
+        body:"nostrum rerum est autem sunt rem eveniet architecto",
+        name:"Juwon"
     },
     {
         id:4,
         title:"Post 4",
-        body:"quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam"
+        body:"quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam",
+        name:"Empire"
     },
 ];
 
@@ -50,6 +54,6 @@ export const getPost = async (id) =>{
 }
 
 export const getUser = async (id) =>{
-    const user = users.find((user) => user.id === parseInt(id));
+    const user = posts.find((user) => user.id === parseInt(id));
     return user;
 }
