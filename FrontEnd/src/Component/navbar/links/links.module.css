@@ -1,0 +1,44 @@
+.container{
+    position: relative;
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.link .login{
+    padding: 10px;
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 15px;
+    color: var(--link-color);
+}
+.menuLink{
+    position: absolute;
+    right: -24px;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    width:200px;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    height: 100vh;
+    padding-top: 100px;
+}
+.menuOpen{
+    display: none;
+}
+@media (max-width:768px){
+    .link{
+        display: none;
+    }
+    .menuOpen{
+        display: block;
+        padding: 15px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,12 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    line-height: 0.1;
+}
+@media (max-width:600px){
+   .footer{
+    justify-content: center;
+   }
+}

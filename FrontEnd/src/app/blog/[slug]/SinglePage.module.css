@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    gap: 50px;
+    margin: 50px 0;
+  }
+  .imageCon{
+    flex: 1;
+    height: 600px;
+    position: relative;
+  }
+  .image{
+    object-fit: cover;
+  }
+  .textCon{
+    flex: 2;
+  }
+  .titleSub{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .titleSub p{
+    transform: translateY(-10px);
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      width: 100%;
+    }
+  }

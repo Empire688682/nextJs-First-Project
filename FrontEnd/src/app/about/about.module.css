@@ -1,0 +1,81 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+.colum1{
+    flex: 1;
+}
+.colum1 h1{
+    font-size: 30px;
+    color: var(--button-color);
+}
+.colum1 h2{
+    font-size: 50px;
+}
+.colum1 .buttons{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.colum1 .buttons button{
+    cursor: pointer;
+    padding: 18px;
+    border-radius: 5px;
+    border: none;
+}
+.colum1 .buttons .button1{
+    background-color: var(--button-color);
+    color: var(--text-color);
+}
+.colum1 .experienceCon{
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+.experienceCon h3{
+    font-weight: bolder;
+    font-size: 30px;
+    color: var(--button-color);
+}
+.brands Img{
+    filter: grayscale(1); 
+}
+.colum2{
+    flex: 1;
+    position: relative;
+    width:100% ;
+    height: 90%;
+}
+.colum2 Image{
+    position: absolute;
+}
+@media (max-width:768px){
+    .container{
+        flex-direction: column;
+    }
+    .colum1{
+        text-align: center;
+    }
+    .colum1 h1{
+        font-size: 25px;
+    }
+    .colum1 h2{
+        font-size: 45px;
+    }
+    .colum1 .experienceCon{
+        display: flex;
+        align-items: center;
+        gap: 0px;
+        flex-direction: column;
+     }
+    .colum2{
+    flex: 1;
+    position: relative;
+    width:100% ;
+    height: 70%;
+}
+ }
